@@ -1,7 +1,8 @@
 FROM mcr.microsoft.com/dotnet/aspnet:6.0
 
-# Instalar librerías nativas necesarias para libwkhtmltox
+# Instalar librerías nativas necesarias para wkhtmltopdf
 RUN apt-get update && apt-get install -y \
+    wkhtmltopdf \
     libxrender1 \
     libfontconfig1 \
     libfreetype6 \
@@ -17,4 +18,3 @@ COPY . .
 EXPOSE 80
 
 ENTRYPOINT ["dotnet", "SistemaVenta.AplicacionWeb.dll"]
-
