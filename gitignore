@@ -1,0 +1,52 @@
+# Build results
+bin/
+obj/
+publish/
+
+# Rider project files
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2019/2022 cache/options directory
+.vs/
+
+# Visual Studio Code settings
+.vscode/
+
+# DotCover
+*.dotCover
+
+# NuGet packages
+*.nupkg
+*.snupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+
+# Build logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Secrets - evita subir datos sensibles
+appsettings.json
+appsettings.Development.json
+
+# Optional: SQLite databases (si usaras)
+*.db
+*.sqlite
+
+# Optional: logs
+logs/
+*.log
+
+# Optional: DinkToPdf native binaries - ya se copian en publish
+Utilidades/LibreriaPDF/libwkhtmltox.dll
+Utilidades/LibreriaPDF/libwkhtmltox.dylib
+Utilidades/LibreriaPDF/libwkhtmltox.so
